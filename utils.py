@@ -196,9 +196,10 @@ def load_data(data_path, dataset_str, PCA_dim, is_NE=True, n_clusters=20, K=None
     # Construct graph
     N = len(cells)
     avg_N = N // n_clusters
-    K = avg_N // 10
-    K = min(K, 20)
-    K = max(K, 6)
+    if K == None:
+        K = avg_N // 10
+        K = min(K, 20)
+        K = max(K, 6)
 
     L = 0
     if is_NE:
