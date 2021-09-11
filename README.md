@@ -1,7 +1,7 @@
 # scGAC
 single-cell graph attentional clustering
 
-## Requirement
+## Requirements
 
 Python --- 3.6.4
 
