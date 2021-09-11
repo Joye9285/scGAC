@@ -22,7 +22,12 @@ We recommend you use the `raw count` expression matrix as the input of scGAC.
 You can obtain the predicted clustering result `pred_DatasetX.txt` and the learned cell embeddings `hidden_DatasetX.tsv` under the folder `result/`.
 
 ### Optional parameters
+To see the optional parameters, you can run the following command:
+```Bash
+python scGAC.py -h
+```
 For example, if you want to evaluate the clustering results (by specifing `--subtype_path`) and change the number of nearest neighbors (by specifing `--k`), you can run the following command:
 ```Bash
 python scGAC.py Yan 6 --subtype_path data/Yan/subtype.ann --k 4
 ```
+Results in the paper were obtained with default parameters.
