@@ -1,6 +1,22 @@
 # scGAC
 single-cell graph attentional clustering
 
+## Requirement
+
+Python --- 3.6.4
+
+Tensorflow --- 1.12.0
+
+Keras --- 2.1.0
+
+Numpy --- 1.19.5
+
+Scipy --- 1.5.4
+
+Pandas --- 1.1.5
+
+Sklearn --- 0.24.2
+
 ## Usage
 To use scGAC, you should specify the two parameters, `dataset_str` and `n_clusters`, and run the following command:
 ```Bash
