@@ -14,12 +14,6 @@ from sklearn.metrics.cluster import adjusted_rand_score
 import scipy
 import scipy.stats
 
-from sklearn.mixture import GaussianMixture
-from sklearn.cluster import SpectralClustering
-from sklearn.cluster import AgglomerativeClustering
-from sklearn.cluster import DBSCAN
-from sklearn.cluster import Birch
-
 from keras.callbacks import EarlyStopping, TensorBoard, ModelCheckpoint
 from keras.layers import Input, Dropout, Lambda
 from keras.models import Model
@@ -67,8 +61,8 @@ if not os.path.exists('result/'):
 
 dataset_str = args.dataset_str
 n_clusters = args.n_clusters
-if args.k <= 1:
-    dropout_rate = 0.
+if args.k == 1:
+    dropout_rate = 0. # To avoid absurd results
 else:
     dropout_rate = args.dropout_rate
 
