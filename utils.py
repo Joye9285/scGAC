@@ -5,20 +5,15 @@ import pickle as pkl
 import sys
 import time
 
-import networkx as nx
 import numpy as np
 import pandas as pd
 import scipy.sparse as sp
 
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn import metrics
 from sklearn.metrics.cluster import adjusted_rand_score
-import matplotlib.patches as mpatches
 from scipy.stats import spearmanr
 
 
