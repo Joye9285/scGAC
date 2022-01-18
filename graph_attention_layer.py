@@ -1,4 +1,7 @@
 """
+The implementation follows https://github.com/danielegrattarola/keras-gat/tree/master/keras_gat. 
+
+
 MIT License
 
 Copyright (c) 2018 Daniele Grattarola
