@@ -1,3 +1,9 @@
+"""
+The implementation of Network Enhancement (NE) is modified from
+https://github.com/wangboyunze/Network_Enhancement on 2021.11.11, 
+which is released under GNU General Public License v3.0. 
+"""
+
 from __future__ import print_function
 
 import os
@@ -53,11 +59,6 @@ def TransitionFields(W, N, eps):
     W = np.dot(W, W.T)
     return W
 
-"""
-The implementation of Network Enhancement (NE) is modified on 2021.11.11 from
-https://github.com/wangboyunze/Network_Enhancement, which is released under 
-GNU General Public License v3.0. 
-"""
 def getNeMatrix(W_in):
     N = len(W_in)
 
