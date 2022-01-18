@@ -54,8 +54,9 @@ def TransitionFields(W, N, eps):
     return W
 
 """
-The implementation of Network Enhancement (NE) is modified from
-https://github.com/wangboyunze/Network_Enhancement on 2021.11.11. 
+The implementation of Network Enhancement (NE) is modified on 2021.11.11 from
+https://github.com/wangboyunze/Network_Enhancement, which is released under 
+GNU General Public License v3.0. 
 """
 def getNeMatrix(W_in):
     N = len(W_in)
