@@ -53,6 +53,10 @@ def TransitionFields(W, N, eps):
     W = np.dot(W, W.T)
     return W
 
+"""
+The implementation of Network Enhancement (NE) is modified from
+https://github.com/wangboyunze/Network_Enhancement on 2021.11.11. 
+"""
 def getNeMatrix(W_in):
     N = len(W_in)
 
