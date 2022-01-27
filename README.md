@@ -31,8 +31,11 @@ python scGAC.py Yan 6
 ```
 For your own dataset named `DatasetX`, you can first create a new folder under `\data`, and put the expression matrix file `data.tsv` into `data/Dataset_X/`, then run scGAC on it.<br>
 
-### Notes
-We recommend you use the `raw count` expression matrix as the input of scGAC. 
+### Inputs
+
+The tested datasets can be downloaded from: ([Yan](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36552), [Biase](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249), [Klein](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65525), [Romanov](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672), [Muraro](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE85241), [Björklund](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70580), [PBMC](https://support.10xgenomics.com/single-cell-gene-expression/datasets/1.1.0/pbmc6k), [Zhang](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108989), [Guo](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99254), [Brown.1](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE137710), [Brown.2](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE137710), [Chung](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75688), [Sun.1](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128066), [Sun.2](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128066), [Sun.3](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128066) and [Habib](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104525)). 
+
+Please note that we recommend you use the `raw count` expression matrix as the input of scGAC. 
 
 ### Outputs
 You can obtain the predicted clustering result `pred_DatasetX.txt` and the learned cell embeddings `hidden_DatasetX.tsv` under the folder `result/`.
