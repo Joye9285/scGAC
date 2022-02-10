@@ -66,7 +66,7 @@ if args.k == 1:
 else:
     dropout_rate = args.dropout_rate
 
-# paths
+# Paths
 data_path = 'data/'+dataset_str+'/data.tsv'
 GAT_autoencoder_path = 'logs/GATae_'+dataset_str+'.h5'
 model_path = 'logs/model_'+dataset_str+'.h5'
@@ -88,20 +88,19 @@ print('Pre-process: run time is %.2f '%run_time, 'minutes')
 N = X.shape[0]                  # Number of nodes in the graph
 F = X.shape[1]                  # Original feature dimension
 
-# Update loss function
+# Loss functions
 def mae(y_true, y_pred):
     return K.mean(K.abs(y_pred-y_true))
 
 def DAEGC_class_loss_1(y_pred):
     return K.mean(K.exp(-1 * A * K.sigmoid(K.dot(y_pred, K.transpose(y_pred)))))
 
-# Total loss = mean_absolute_imputation_error + class_loss
 def maie_class_loss(y_true, y_pred):
     loss_E = mae(y_true, y_pred)
     return loss_E
 
 
-# Model definition (as per Section 3.3 of the paper)
+# Model definition
 X_in = Input(shape=(F,))
 A_in = Input(shape=(N,))
 
